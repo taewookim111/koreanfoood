@@ -1,0 +1,100 @@
+header {
+    width: 1180px;
+    height: 60px;
+    position: relative;
+    margin: 0 auto;
+    .inner{
+        width: 100%;
+        height: 100%;
+        h1{
+            position: relative;
+            left: 1%;
+            a{
+                font: bold 24px/60px "arial";
+                color: #000;
+            }
+        }
+        .menuWeb{
+            transition: 1s;
+            #gnb{
+                position: absolute;
+                left: 350px;
+                bottom: 7px;
+                &::after{
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+                li{
+                    float: left;
+                    a{
+                        display: block;
+                        padding: 15px 30px;
+                        font: bold 16px/1 "Noto Serif KR";
+                        color: #111;
+                        &:hover{
+                            background-color: #444;
+                            color: #fff;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+            .util{
+                position: absolute;
+                top: 18px;
+                right: 40px;
+                li{
+                    a{
+                        font:bold 14px/1 "Noto Serif KR";
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1179px) {
+    header {
+        width: 100%;
+        .inner{
+            padding: 0 20px;
+            h1{
+                a{
+                    font: bold 24px/60px "arial";
+                    color: #000;
+                }
+            }
+            .menuWeb{
+                #gnb{
+                    li{
+                        a{
+                            display: block;
+                            padding: 15px 20px;
+                            font: bold 16px/1 "Noto Serif KR";
+                            color: #111;
+                            margin-right: 30px;
+                            &:hover{
+                                background-color: #444;
+                                color: #fff;
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+                .util{
+                    position: absolute;
+                    top: 18px;
+                    right: 40px;
+                    li{
+                        a{
+                            font:bold 14px/1 "Noto Serif KR";
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

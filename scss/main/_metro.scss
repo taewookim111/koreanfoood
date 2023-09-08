@@ -1,0 +1,180 @@
+#metro {
+    width: 100%;
+    nav {
+        width: 1160px;
+        margin: 20px auto;
+        a {
+            font: 20px/1 "arial";
+            color: #999;
+            padding: 20px 40px 20px 0px;
+            &.on {
+                color: #000;
+            }
+        }
+    }
+
+    section {
+        display: none;
+        padding: 5px;
+
+        &.on {
+            display: block;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        article {
+            width: 25vw;
+            height: 20vw;
+            float: left;
+            padding: 5px;
+            .inner {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transform: scale(0);
+                transition: 0.5s;
+            }
+        }
+        
+        &.active {
+            article {
+                .inner {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                &:hover{
+                    article{
+                        .inner{
+                            opacity: 1;
+                            transform: scale(1.2);
+        
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        article {
+            width: 50%;
+            h2{
+                position: relative;
+                top: 20px;
+                margin-left: 5%;
+                font: bold 8vw/1 "arial";
+            }
+            .inner {
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        &:nth-of-type(3){
+            article{
+                h2{
+                    font: bold 6vw/1 "arial";
+                }
+            }
+        }
+    }    
+}
+@media screen and (max-width: 1210px){
+    #metro {
+        width: 100%;
+        nav {
+            width: 1160px;
+            margin: 20px auto;
+            a {
+                font: 20px/1 "arial";
+                color: #999;
+                padding: 20px 40px 20px 0px;
+                &.on {
+                    color: #000;
+                }
+            }
+        }
+    
+        section {
+            display: none;
+            padding: 5px;
+    
+            &.on {
+                display: block;
+            }
+    
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+    
+            article {
+                width: 25vw;
+                height: 20vw;
+                float: left;
+                padding: 5px;
+                .inner {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    transform: scale(0);
+                    transition: 0.5s;
+                }
+            }
+            
+            &.active {
+                article {
+                    .inner {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                    &:hover{
+                        article{
+                            .inner{
+                                opacity: 1;
+                                transform: scale(1.2);
+            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        section {
+            article {
+                width: 50%;
+                h2{
+                    position: relative;
+                    top: 20px;
+                    margin-left: 5%;
+                    font: bold 8vw/1 "arial";
+                }
+                .inner {
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            &:nth-of-type(3){
+                article{
+                    h2{
+                        font: bold 6vw/1 "arial";
+                    }
+                }
+            }
+        }    
+    }
+}

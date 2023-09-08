@@ -1,0 +1,1029 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 1180px;
+  height: 60px;
+  position: relative;
+  margin: 0 auto;
+}
+header .inner {
+  width: 100%;
+  height: 100%;
+}
+header .inner h1 {
+  position: relative;
+  left: 1%;
+}
+header .inner h1 a {
+  font: bold 24px/60px "arial";
+  color: #000;
+}
+header .inner .menuWeb {
+  transition: 1s;
+}
+header .inner .menuWeb #gnb {
+  position: absolute;
+  left: 350px;
+  bottom: 7px;
+}
+header .inner .menuWeb #gnb::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header .inner .menuWeb #gnb li {
+  float: left;
+}
+header .inner .menuWeb #gnb li a {
+  display: block;
+  padding: 15px 30px;
+  font: bold 16px/1 "Noto Serif KR";
+  color: #111;
+}
+header .inner .menuWeb #gnb li a:hover {
+  background-color: #444;
+  color: #fff;
+  opacity: 0.8;
+}
+header .inner .menuWeb .util {
+  position: absolute;
+  top: 18px;
+  right: 40px;
+}
+header .inner .menuWeb .util li a {
+  font: bold 14px/1 "Noto Serif KR";
+  color: #000;
+}
+
+@media screen and (max-width: 1179px) {
+  header {
+    width: 100%;
+  }
+  header .inner {
+    padding: 0 20px;
+  }
+  header .inner h1 a {
+    font: bold 24px/60px "arial";
+    color: #000;
+  }
+  header .inner .menuWeb #gnb li a {
+    display: block;
+    padding: 15px 20px;
+    font: bold 16px/1 "Noto Serif KR";
+    color: #111;
+    margin-right: 30px;
+  }
+  header .inner .menuWeb #gnb li a:hover {
+    background-color: #444;
+    color: #fff;
+    opacity: 0.8;
+  }
+  header .inner .menuWeb .util {
+    position: absolute;
+    top: 18px;
+    right: 40px;
+  }
+  header .inner .menuWeb .util li a {
+    font: bold 14px/1 "Noto Serif KR";
+    color: #000;
+  }
+}
+#slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  margin: 400px auto 250px;
+}
+#slider .title {
+  position: relative;
+  font: bold 80px "arial";
+  color: #999;
+}
+#slider .panel {
+  width: 300%;
+  height: 100%;
+  transition: 0.6s;
+  position: relative;
+}
+#slider .panel li {
+  width: 33.3333333333%;
+  height: 100%;
+  padding: 0 5px;
+  float: left;
+}
+#slider .panel li ::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#slider .panel li video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+#slider .panel li h2 {
+  position: absolute;
+  font: bold 250px/1 "Noto Serif KR";
+  color: mintcream;
+  top: 0px;
+  margin-left: 25%;
+}
+#slider .panel li p {
+  position: absolute;
+  font: bold 100px/1 "Noto Serif KR";
+  color: mintcream;
+  bottom: 120px;
+  margin-left: 24%;
+}
+#slider .panel li:nth-of-type(2) h2 {
+  margin-left: 12%;
+  color: yellow;
+}
+#slider .panel li:nth-of-type(2) p {
+  margin-left: 15%;
+  color: yellow;
+}
+#slider .panel li:nth-of-type(3) h2 {
+  margin-left: 4%;
+  color: pink;
+}
+#slider .panel li:nth-of-type(3) p {
+  margin-left: 6%;
+  color: pink;
+}
+#slider .btns {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+}
+#slider .btns li {
+  float: left;
+  margin-right: 10px;
+}
+#slider .btns li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #999;
+  border-radius: 50%;
+}
+#slider .btns li.on a {
+  background-color: #fff;
+}
+
+#box {
+  width: 1180px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#box .inner {
+  width: 100%;
+  height: 100%;
+  background-color: #F0EAD6;
+}
+#box .inner h2 {
+  position: relative;
+  top: 25px;
+  left: 150px;
+  font: bold 24px/1 "Noto Serif KR";
+}
+#box .inner article {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  left: 70px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#box .inner article i {
+  font-size: 100px;
+  margin-bottom: 15px;
+}
+#box .inner article p {
+  font: bold 16px/1 "Noto Serif KR";
+  margin-top: 20px;
+  text-align: center;
+}
+#box .inner .pic {
+  width: 130px;
+  height: 400px;
+  float: right;
+  position: relative;
+  top: -25px;
+}
+#box .inner .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#box .inner .pic2 {
+  width: 200px;
+  height: 200px;
+  float: right;
+  position: relative;
+  top: -270px;
+  right: -100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid bisque;
+}
+#box .inner .pic2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#box a {
+  position: relative;
+  top: -55px;
+  left: 200px;
+  padding: 8px 40px;
+  border: 1px solid #fff;
+  color: grey;
+  background-color: mintcream;
+  font: bold 14px/1 "Noto Serif KR";
+  transition: 0.2s;
+}
+#box a:hover {
+  border: 1px solid #333;
+  color: #fff;
+  background-color: #333;
+}
+
+.aside {
+  width: 1180px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: -400px;
+  opacity: 0;
+  z-index: -1;
+  transition: 1s;
+}
+.aside .inner {
+  width: 100%;
+  height: 100%;
+  background-color: #666;
+}
+.aside .inner .meal {
+  float: left;
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  margin: 20px;
+  border-radius: 12px;
+  opacity: 0.8;
+}
+.aside .inner div {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aside .inner div h2 {
+  font: bold 32px/1 "Noto Serif KR";
+  color: #fff;
+  padding: 50px;
+}
+.aside .inner div p {
+  font: bold 16px/1.7 "Noto Serif KR";
+  color: #fff;
+}
+.aside .inner .meal2 {
+  position: relative;
+  top: -350px;
+  float: right;
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  margin: 20px;
+  border-radius: 12px;
+  opacity: 0.8;
+}
+.aside .inner i {
+  position: relative;
+  color: #fff;
+  top: -320px;
+  right: -480px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.aside.on {
+  opacity: 1;
+  z-index: 1;
+}
+
+footer {
+  width: 100%;
+  background-color: #444;
+}
+footer .inner {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .inner h1 {
+  font: bold 30px/1 "arial";
+  color: mintcream;
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
+footer .inner ul {
+  margin-top: 20px;
+  display: flex;
+  float: left;
+  gap: 15px;
+}
+footer .inner ul li {
+  background-color: #777;
+  margin-bottom: 15px;
+}
+footer .inner ul li a {
+  padding: 30px;
+  color: mintcream;
+  font: bold 13px/30px "Noto Serif KR";
+}
+footer .inner address {
+  width: 100%;
+  font: 14px/1.3 "arial";
+  color: #bbb;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+footer .inner p {
+  width: 100%;
+  font: 12px/1 "arial";
+  color: #777;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+figure {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: #333;
+}
+figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+figure .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+figure .inner h2 {
+  font: normal 120px/1 "arial";
+  color: #fff;
+  margin-bottom: 5px;
+}
+figure .inner span {
+  display: block;
+  font: normal 36px/1 "Noto Serif KR";
+  color: #fff;
+  margin-bottom: 80px;
+}
+figure .inner p {
+  font: 18px/1.4 "Noto Serif KR";
+  color: #fff;
+  margin-bottom: 100px;
+}
+figure .inner a {
+  display: block;
+  width: 400px;
+  height: 35px;
+  border: 1px solid #bbb;
+  text-align: center;
+  font: bold 14px/35px "Noto Serif KR";
+  color: #fff;
+}
+figure .inner a:hover {
+  background-color: #fff;
+  color: #444;
+}
+
+@media screen and (max-width: 1210px) {
+  figure {
+    width: 100%;
+    height: 80vh;
+    background: url(../img/김장리액트.jpg) no-repeat center/cover;
+  }
+  figure video {
+    display: none;
+  }
+  figure .inner {
+    width: 100%;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  figure .inner h2 {
+    color: burlywood;
+    font: normal 80px/1 "arial";
+  }
+  figure .inner span {
+    color: burlywood;
+    margin-bottom: 10px;
+  }
+  figure .inner p {
+    color: burlywood;
+    margin-bottom: 25px;
+  }
+  figure .inner a {
+    color: burlywood;
+    border: 1px solid burlywood;
+    margin-bottom: 20px;
+  }
+  figure .inner a:hover {
+    background-color: brown;
+    color: burlywood;
+  }
+}
+@media screen and (max-width: 280px) {
+  figure .inner h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font: normal 40px/1 "arial";
+  }
+  figure .inner span {
+    margin-bottom: 10px;
+    font: normal 28px/1 "Noto Serif KR";
+  }
+  figure .inner p {
+    font: 12px/1.6 "Noto Serif KR";
+    margin-bottom: 50px;
+  }
+  figure .inner a {
+    height: 30px;
+    font: bold 8px/30px "Noto Serif KR";
+    width: 80px;
+  }
+}
+@media screen and (max-height: 570px) {
+  figure {
+    padding: 20px 0;
+  }
+  figure .inner h2 {
+    margin-top: 10px;
+    color: burlywood;
+    margin-bottom: 10px;
+    font: normal 35px/1 "arial";
+  }
+  figure .inner span {
+    color: burlywood;
+    margin-bottom: 5px;
+  }
+  figure .inner p {
+    font: 10px/1.5 "Noto Serif KR";
+    color: burlywood;
+    margin-bottom: 50px;
+  }
+  figure .inner a {
+    height: 30px;
+    font: bold 8px/30px "Noto Serif KR";
+    width: 80px;
+    color: burlywood;
+  }
+}
+#metro {
+  width: 100%;
+}
+#metro nav {
+  width: 1160px;
+  margin: 20px auto;
+}
+#metro nav a {
+  font: 20px/1 "arial";
+  color: #999;
+  padding: 20px 40px 20px 0px;
+}
+#metro nav a.on {
+  color: #000;
+}
+#metro section {
+  display: none;
+  padding: 5px;
+}
+#metro section.on {
+  display: block;
+}
+#metro section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#metro section article {
+  width: 25vw;
+  height: 20vw;
+  float: left;
+  padding: 5px;
+}
+#metro section article .inner {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.5s;
+}
+#metro section.active article .inner {
+  opacity: 1;
+  transform: scale(1);
+}
+#metro section.active article:hover article .inner {
+  opacity: 1;
+  transform: scale(1.2);
+}
+#metro section article {
+  width: 50%;
+}
+#metro section article h2 {
+  position: relative;
+  top: 20px;
+  margin-left: 5%;
+  font: bold 8vw/1 "arial";
+}
+#metro section article .inner {
+  overflow: hidden;
+}
+#metro section article .inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#metro section:nth-of-type(3) article h2 {
+  font: bold 6vw/1 "arial";
+}
+
+@media screen and (max-width: 1210px) {
+  #metro {
+    width: 100%;
+  }
+  #metro nav {
+    width: 1160px;
+    margin: 20px auto;
+  }
+  #metro nav a {
+    font: 20px/1 "arial";
+    color: #999;
+    padding: 20px 40px 20px 0px;
+  }
+  #metro nav a.on {
+    color: #000;
+  }
+  #metro section {
+    display: none;
+    padding: 5px;
+  }
+  #metro section.on {
+    display: block;
+  }
+  #metro section::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #metro section article {
+    width: 25vw;
+    height: 20vw;
+    float: left;
+    padding: 5px;
+  }
+  #metro section article .inner {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  #metro section.active article .inner {
+    opacity: 1;
+    transform: scale(1);
+  }
+  #metro section.active article:hover article .inner {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  #metro section article {
+    width: 50%;
+  }
+  #metro section article h2 {
+    position: relative;
+    top: 20px;
+    margin-left: 5%;
+    font: bold 8vw/1 "arial";
+  }
+  #metro section article .inner {
+    overflow: hidden;
+  }
+  #metro section article .inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #metro section:nth-of-type(3) article h2 {
+    font: bold 6vw/1 "arial";
+  }
+}
+#news {
+  width: 100%;
+  padding: 100px 0px;
+}
+#news .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+#news .inner h1 {
+  font: bold 44px/1 "arial";
+  color: #333;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 70px;
+}
+#news .inner .wrap {
+  width: 100%;
+}
+#news .inner .wrap article {
+  width: 280px;
+  float: left;
+  margin-right: 20px;
+}
+#news .inner .wrap article:last-child {
+  margin-right: 0px;
+}
+#news .inner .wrap article .pic {
+  width: 100%;
+  height: 140px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#news .inner .wrap article .pic:hover img {
+  transform: scale(1.2);
+}
+#news .inner .wrap article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+#news .inner .wrap article h2 {
+  margin-bottom: 10px;
+  font: bold 20px/1 "arial";
+}
+#news .inner .wrap article p {
+  font: 17px/1 "Noto Serif KR";
+  color: #111;
+}
+
+#tapmenu {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto 100px;
+  top: -200px;
+}
+#tapmenu .title1 {
+  position: relative;
+  font: bold 80px/1 "arial";
+  color: brown;
+  top: -140px;
+  left: -340px;
+  margin-right: 5px;
+}
+#tapmenu #buttons {
+  width: 1200px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#tapmenu #buttons nav {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+#tapmenu #buttons nav ul {
+  width: 100%;
+}
+#tapmenu #buttons nav ul li {
+  width: 100%;
+  height: 100px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: url(../img/단청.jpg) no-repeat center/cover;
+  transition: 0.5s;
+}
+#tapmenu #buttons nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid brown;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#tapmenu #buttons nav ul li a p {
+  opacity: 0;
+  z-index: -1;
+  font: bold 22px/1 "Noto Serif KR";
+  text-align: center;
+  color: #000;
+  transition: 0.5s;
+}
+#tapmenu #buttons nav ul li:hover, #tapmenu #buttons nav ul li.on {
+  background: mintcream;
+}
+#tapmenu #buttons nav ul li:hover a p, #tapmenu #buttons nav ul li.on a p {
+  opacity: 1;
+  z-index: 1;
+}
+#tapmenu #buttons #contents {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-left: 25px;
+  border-radius: 20px;
+  border: 6px solid burlywood;
+  transition: 0.5s;
+  overflow: hidden;
+}
+#tapmenu #buttons #contents article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 13px;
+  transition: 0.5s;
+}
+#tapmenu #buttons #contents article::after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+#tapmenu #buttons #contents article img {
+  float: left;
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+#tapmenu #buttons #contents article .txt {
+  float: right;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/한지.jpg);
+  padding: 20px;
+}
+#tapmenu #buttons #contents article .txt h2 {
+  position: relative;
+  text-align: center;
+  font: bold 32px/1 "Noto Serif KR";
+  color: #000;
+  margin-bottom: 10px;
+}
+#tapmenu #buttons #contents article .txt p {
+  position: relative;
+  top: 30px;
+  font: bold 16px/1.6 "Noto Serif KR";
+  color: #000;
+}
+#tapmenu #buttons #contents article.on {
+  opacity: 1;
+  z-index: 1;
+}
+#tapmenu .title2 {
+  position: relative;
+  font: bold 80px/1 "arial";
+  color: brown;
+  top: 80px;
+  right: -360px;
+}
+#tapmenu h1 {
+  position: absolute;
+  bottom: -170px;
+  font: bold 100px/1 "arial";
+  background: url(../img/한지.jpg) no-repeat center/cover;
+  color: burlywood;
+  padding: 20px;
+}
+
+body #kimchi {
+  width: 100%;
+}
+body #kimchi .inner1 {
+  width: 1180px;
+  margin: 100px auto 20px;
+}
+body #kimchi .inner1 h1 {
+  font: bold 50px/1 "Noto Serif KR";
+  color: #666;
+}
+body #kimchi .inner1 img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid violet;
+  position: relative;
+  z-index: -1;
+  opacity: 0.6;
+}
+body #kimchi .inner1 img[data-index="1"] {
+  top: -70px;
+}
+body #kimchi .inner1 img[data-index="2"] {
+  top: 200px;
+  right: -650px;
+}
+body #kimchi .inner1 .txt p {
+  width: 100%;
+  font: bold 18px/1.7 "Noto Serif KR";
+  color: #666;
+  position: relative;
+  top: -150px;
+  padding: 10px;
+}
+body #kimchi .banner {
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/chillies.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body #kimchi .banner .inner3 {
+  width: 1180px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+body #kimchi .banner .inner3 p {
+  margin-top: 15px;
+  padding: 10px;
+  font: normal 17px/1.3 "Noto Serif KR";
+  color: #fff;
+}
+body #map {
+  width: 100%;
+  background-color: #000;
+  padding: 20px 0;
+}
+body #map div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  border: 3px solid #999;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  transition: 0.1s;
+}
+body #map div p {
+  font: bold 16px/1.7 "Noto Serif KR";
+  color: #777;
+  padding: 20px;
+}
+body #map div img {
+  object-fit: cover;
+}
+body #map .left {
+  position: relative;
+  left: -800px;
+}
+body #map .right {
+  position: relative;
+  right: -1900px;
+}
+body #map .left1 {
+  position: relative;
+  left: -800px;
+}
+body #map .right1 {
+  position: relative;
+  right: -1900px;
+}
+body #map .left2 {
+  position: relative;
+  left: -800px;
+}
+body #map .bg {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  opacity: 0.1;
+}
+body #process {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 150px;
+}
+body #process .panel2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+}
+body #process .panel2 li {
+  width: 33.3333333333%;
+  height: 100%;
+  float: left;
+  padding: 0 100px;
+}
+body #process .panel2 li h2 {
+  width: 800px;
+  height: 100px;
+  position: relative;
+  font: bold 48px/1 "Noto Serif KR";
+  color: #fff;
+  top: 50px;
+  left: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+body #process .panel2 li p {
+  width: 50%;
+  position: relative;
+  top: 75px;
+  left: 40%;
+  font: normal 18px/1.4 "Noto Serif KR";
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+body #process .panel2 li[data-index="1"] {
+  background: url(../img/배추절이는사진.jpg) no-repeat center/cover;
+}
+body #process .panel2 li[data-index="2"] {
+  background: url(../img/김장.jpg) no-repeat center/cover;
+}
+body #process .panel2 li[data-index="3"] {
+  background: url(../img/김치보관.png) no-repeat center/cover;
+}
+body #process .prev {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  opacity: 0.9;
+}
+body #process .next {
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  opacity: 0.9;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

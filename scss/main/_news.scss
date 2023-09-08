@@ -1,0 +1,53 @@
+#news{
+    width: 100%;
+    padding: 100px 0px;
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+        h1{
+            font: bold 44px/1 "arial";
+            color: #333;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 70px;
+        }
+        .wrap{
+            width: 100%;
+            article{
+                width: 280px;
+                float: left;
+                margin-right: 20px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                .pic{
+                    width: 100%;
+                    height: 140px;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    &:hover{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: all 0.5s;
+                    }
+                }
+                h2{
+                    margin-bottom: 10px;
+                    font: bold 20px/1 "arial"; 
+                }
+                p{
+                    font: 17px/1 "Noto Serif KR";
+                    color: #111;
+                }
+            }
+        }
+    }
+}

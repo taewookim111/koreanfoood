@@ -1,0 +1,145 @@
+#box{
+    width: 1180px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    .inner{
+        width: 100%;
+        height: 100%;
+        background-color: #F0EAD6;
+        h2{
+            position: relative;
+            top: 25px;
+            left: 150px;
+            font: bold 24px/1 "Noto Serif KR";
+        }
+        article{
+            width: 300px;
+            height: 350px;
+            position: relative;
+            left: 70px;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            i{
+                font-size: 100px;
+                margin-bottom: 15px;
+            }
+            p{
+                font:bold 16px/1 "Noto Serif KR";
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+        .pic{
+            width: 130px;
+            height: 400px;
+            float: right;
+            position: relative;
+            top: -25px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .pic2{
+            width: 200px;
+            height: 200px;
+            float: right;
+            position: relative;
+            top: -270px;
+            right: -100px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 3px solid bisque;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    a{
+        position: relative;
+        top: -55px;
+        left: 200px;
+        padding: 8px 40px;
+        border: 1px solid #fff;
+        color: grey;
+        background-color: mintcream;
+        font: bold 14px/1 "Noto Serif KR";
+        transition: 0.2s;
+        &:hover{
+            border: 1px solid #333;
+            color: #fff;
+            background-color: #333;
+        }
+    }
+}
+.aside{
+    width: 1180px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: -400px;
+    opacity: 0;
+    z-index: -1;
+    transition: 1s;
+    .inner{
+        width: 100%;
+        height: 100%;
+        background-color: #666;
+        .meal{
+            float: left;
+            width: 300px;
+            height: 350px;
+            object-fit: cover;
+            margin: 20px;
+            border-radius: 12px;
+            opacity: 0.8;
+        }
+        div{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                font: bold 32px/1 "Noto Serif KR";
+                color: #fff;
+                padding: 50px;
+            }
+            p{
+                font: bold 16px/1.7 "Noto Serif KR";
+                color: #fff;
+            }
+        }
+        .meal2{
+            position: relative;
+            top: -350px;
+            float: right;
+            width: 300px;
+            height: 350px;
+            object-fit: cover;
+            margin: 20px;
+            border-radius: 12px;
+            opacity: 0.8;
+        }
+        i{
+            position: relative;
+            color: #fff;
+            top: -320px;
+            right: -480px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    &.on{
+        opacity: 1;
+        z-index: 1;
+    }
+}
